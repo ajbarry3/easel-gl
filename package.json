@@ -1,11 +1,17 @@
 {
   "name": "easel-gl",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "",
   "main": "easeljs.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "AJ Barry",
-  "license": "ISC"
+  "license": "ISC",
+  "repository" :
+  { "type" : "git"
+  , "url" : "https://github.com/ajbarry3/easel-gl.git"
+  },
+   "url" : "http://www.superpositionmedia.com",
+   "email" : "aj@superpositionmedia.com"
 }

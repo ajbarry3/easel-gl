@@ -15,7 +15,7 @@ npm install easel-gl --save
 
 ```ts
 import {Component} from '@angular/core';
-import { * as easel-gl } from 'easel-gl';
+import * as easelGL from 'easel-gl';
 
 @Component({
   selector: 'project-name-app',
@@ -26,10 +26,17 @@ import { * as easel-gl } from 'easel-gl';
   `
 })
 export class MyApp {
-    var stage = new easel-gl.Stage("demoCanvas");
-    var bitmap = new easel-gl.Bitmap("assets/your-image.jpg");
+  ionViewDidEnter() {
+    var stage = new easelGL.StageGL("demoCanvas");
+    var bitmap = new easelGL.Bitmap("./assets/default-user.jpg");
+    bitmap.x = 50;
+    bitmap.y = 50;
     stage.addChild(bitmap);
     stage.update();
+  }
+
+  constructor(){
+  }
 }
 ```
 
