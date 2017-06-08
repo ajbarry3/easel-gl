@@ -13,6 +13,33 @@ You can find documentation with troubleshooting in a [CreateJS](http://blog.crea
 npm install easel-gl --save
 ```
 
+**Angular**
+```ts
+import { Component, AfterViewInit } from '@angular/core';
+import * as easelGL from 'easel-gl';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent implements AfterViewInit {
+  title = 'app works!';
+
+  ngAfterViewInit() {
+    var stage = new easelGL.StageGL("demoCanvas");
+    var bitmap = new easelGL.Bitmap("assets/default-user.jpg");
+    bitmap.x = 50;
+    bitmap.y = 50;
+    stage.addChild(bitmap);
+    stage.update();
+  }
+
+}
+```
+
+
+**Ionic**
 ```ts
 import {Component} from '@angular/core';
 import * as easelGL from 'easel-gl';
@@ -25,10 +52,12 @@ import * as easelGL from 'easel-gl';
     </ion-content>
   `
 })
+
 export class MyApp {
+
   ionViewDidEnter() {
     var stage = new easelGL.StageGL("demoCanvas");
-    var bitmap = new easelGL.Bitmap("./assets/default-user.jpg");
+    var bitmap = new easelGL.Bitmap("./assets/your-image.jpg");
     bitmap.x = 50;
     bitmap.y = 50;
     stage.addChild(bitmap);
@@ -39,5 +68,3 @@ export class MyApp {
   }
 }
 ```
-
-
