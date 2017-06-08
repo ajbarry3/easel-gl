@@ -1,0 +1,110 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Users\\AJ-BARRY\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.3
+3 info using node@v6.9.2
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: 'C:\\Users\\AJ-BARRY\\npm\\easel',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory C:\Users\AJ-BARRY\AppData\Roaming\npm-cache\easel-gl\1.0.4\package.tgz not in flight; packing
+9 verbose correctMkdir C:\Users\AJ-BARRY\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+10 info lifecycle easel-gl@1.0.4~prepublish: easel-gl@1.0.4
+11 silly lifecycle easel-gl@1.0.4~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ 'C:\\Users\\AJ-BARRY\\AppData\\Roaming\\npm-cache\\easel-gl\\1.0.4\\package.tgz',
+12 verbose tar pack   'C:\\Users\\AJ-BARRY\\npm\\easel' ]
+13 verbose tarball C:\Users\AJ-BARRY\AppData\Roaming\npm-cache\easel-gl\1.0.4\package.tgz
+14 verbose folder C:\Users\AJ-BARRY\npm\easel
+15 verbose addLocalTarball adding from inside cache C:\Users\AJ-BARRY\AppData\Roaming\npm-cache\easel-gl\1.0.4\package.tgz
+16 verbose correctMkdir C:\Users\AJ-BARRY\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+17 silly cache afterAdd easel-gl@1.0.4
+18 verbose afterAdd C:\Users\AJ-BARRY\AppData\Roaming\npm-cache\easel-gl\1.0.4\package\package.json not in flight; writing
+19 verbose correctMkdir C:\Users\AJ-BARRY\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+20 verbose afterAdd C:\Users\AJ-BARRY\AppData\Roaming\npm-cache\easel-gl\1.0.4\package\package.json written
+21 silly publish { name: 'easel-gl',
+21 silly publish   version: '1.0.4',
+21 silly publish   description: 'This is the easeljs-0.8.2 "in-progress" build.',
+21 silly publish   main: 'easeljs.js',
+21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   author: { name: 'AJ Barry' },
+21 silly publish   license: 'ISC',
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/ajbarry3/easel-gl.git' },
+21 silly publish   url: 'http://www.superpositionmedia.com',
+21 silly publish   email: 'aj@superpositionmedia.com',
+21 silly publish   readme: '# Easeljs-Next\n\nThis is the easeljs-0.8.2 "in-progress" build.\n\nThe big new feature is the StageGL.\nYou can find documentation with troubleshooting in a [CreateJS](http://blog.createjs.com/getting-started-with-stagegl/) blog post.\n\n***Note vectored objects do not work with StageGL only bitmap images.\n\n## Install\n\n```bash\nnpm install easel-gl --save\n```\n\n**Angular**\n```ts\nimport { Component, AfterViewInit } from \'@angular/core\';\nimport * as easelGL from \'easel-gl\';\n\n@Component({\n  selector: \'app-root\',\n  template: \'<canvas width="500" height=500 id="demoCanvas"></canvas>\'\n})\nexport class AppComponent implements AfterViewInit {\n\n  ngAfterViewInit() {\n    var stage = new easelGL.StageGL("demoCanvas");\n    var bitmap = new easelGL.Bitmap("assets/default-user.jpg");\n    bitmap.x = 50;\n    bitmap.y = 50;\n    stage.addChild(bitmap);\n    stage.update();\n  }\n\n}\n```\n\n\n**Ionic**\n```ts\nimport {Component} from \'@angular/core\';\nimport * as easelGL from \'easel-gl\';\n\n@Component({\n  selector: \'project-name-app\',\n  template: `\n    <ion-content padding>\n     <canvas width="500" height=500 id="demoCanvas"></canvas>\n    </ion-content>\n  `\n})\n\nexport class MyApp {\n\n  ionViewDidEnter() {\n    var stage = new easelGL.StageGL("demoCanvas");\n    var bitmap = new easelGL.Bitmap("./assets/your-image.jpg");\n    bitmap.x = 50;\n    bitmap.y = 50;\n    stage.addChild(bitmap);\n    stage.update();\n  }\n\n  constructor(){\n  }\n}\n```\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: '5b2bf814e457896ed530b5bd60313f89ef76f107',
+21 silly publish   bugs: { url: 'https://github.com/ajbarry3/easel-gl/issues' },
+21 silly publish   homepage: 'https://github.com/ajbarry3/easel-gl#readme',
+21 silly publish   _id: 'easel-gl@1.0.4',
+21 silly publish   _shasum: '9d0512642614b4252b998105dfe240a20ff2e6c9',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name easel-gl
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'easel-gl',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'easel-gl',
+26 silly mapToRegistry   name: 'easel-gl',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/easel-gl
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading C:\Users\AJ-BARRY\AppData\Roaming\npm-cache\easel-gl\1.0.4\package.tgz
+30 verbose request uri https://registry.npmjs.org/easel-gl
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 11:11:18 PM
+33 verbose request using bearer token for auth
+34 verbose request id f5f68a86c9c43554
+35 http request PUT https://registry.npmjs.org/easel-gl
+36 http 403 https://registry.npmjs.org/easel-gl
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '95',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Thu, 08 Jun 2017 03:11:14 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-jfk8120-JFK',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1496891473.467046,VS0,VE587',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating C:\Users\AJ-BARRY\AppData\Roaming\npm-cache\registry.npmjs.org\easel-gl on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: "You cannot publish over the previously published version 1.0.4." : easel-gl
+40 verbose stack     at makeError (C:\Users\AJ-BARRY\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (C:\Users\AJ-BARRY\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:252:14)
+40 verbose stack     at Request._callback (C:\Users\AJ-BARRY\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
+40 verbose stack     at Request.self.callback (C:\Users\AJ-BARRY\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:200:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (C:\Users\AJ-BARRY\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:1067:10)
+40 verbose stack     at emitOne (events.js:101:20)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (C:\Users\AJ-BARRY\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:988:12)
+41 verbose statusCode 403
+42 verbose pkgid easel-gl
+43 verbose cwd C:\Users\AJ-BARRY\npm\easel
+44 error Windows_NT 10.0.14393
+45 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Users\\AJ-BARRY\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+46 error node v6.9.2
+47 error npm  v3.10.3
+48 error code E403
+49 error "You cannot publish over the previously published version 1.0.4." : easel-gl
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]

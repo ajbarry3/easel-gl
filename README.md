@@ -20,11 +20,9 @@ import * as easelGL from 'easel-gl';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template: '<canvas width="500" height=500 id="demoCanvas"></canvas>'
 })
 export class AppComponent implements AfterViewInit {
-  title = 'app works!';
 
   ngAfterViewInit() {
     var stage = new easelGL.StageGL("demoCanvas");
